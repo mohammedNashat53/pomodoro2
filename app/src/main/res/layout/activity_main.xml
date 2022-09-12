@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:indeterminateOnly="false"
+        android:progress="100"
+        android:progressDrawable="@drawable/circular_progress"
+        app:layout_constraintBottom_toBottomOf="@+id/tvcounter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvcounter" />
+
+    <TextView
+        android:id="@+id/tvReset"
+        style="@style/text_button_style2"
+        android:text="@string/reset"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/text_button_style2"
+        android:layout_marginTop="72dp"
+        android:text="@string/title"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btStart"
+        style="@style/text_button_style2"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_background"
+        android:text="@string/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/tvcounter"
+        style="@style/text_button_style2"
+        android:text="@string/start_time"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/minutesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvThirtyMin"
+            style="@style/text_style"
+            android:layout_margin="8dp"
+            android:text="@string/thirty_minutes" />
+
+        <TextView
+            android:id="@+id/tvTwityFifeMin"
+            style="@style/text_style"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/twenty_five_minutes" />
+
+        <TextView
+            android:id="@+id/tvTwentyMin"
+            style="@style/text_style"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="@string/twenty_minutes" />
+
+        <TextView
+            android:id="@+id/tvFifeMin"
+            style="@style/text_style"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/five_minutes" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

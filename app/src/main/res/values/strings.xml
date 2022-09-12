@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pomodoro</string>
+    <string name="title">Take a Pomodoro</string>
+    <string name="setAPirod">Set a Period</string>
+    <string name="keep_going">Keep Going....</string>
+    <string name="reset">Reset</string>
+    <string name="start">Start</string>
+    <string name="start_time">00:00</string>
+    <string name="thirty_minutes">30:00</string>
+    <string name="twenty_five_minutes">25:00</string>
+    <string name="twenty_minutes">20:00</string>
+    <string name="five_minutes">5:00</string>
+</resources>
