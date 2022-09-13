@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var timer: CountDownTimer
 
-    var startInMili: Long = 0L
+    private var startInMili: Long = 0L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
